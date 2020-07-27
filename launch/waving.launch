@@ -1,0 +1,3 @@
+<launch>
+	<node name="waving" pkg="gesture_recognition" type="waving.py" output="screen"/>
+</launch>
