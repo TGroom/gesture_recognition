@@ -31,7 +31,7 @@ Executing  `rosrun gesture_recognition waving.py` will use a webcam as input and
 gestures = {'wave': waving, 'hand_pos': (int(average_pos[0]-frame_shape[1]/2),int(average_pos[1]-frame_shape[0]/2))}
 rospy.set_param('gestures', gestures)
 ```
-`gesture/wave` is a bool assigned either True or False. This parameter is True when somone is detected waving.
+`gesture/wave` is a bool assigned either True or False. This parameter is True when someone is detected waving.
 `gesture/hand_pos` is a tuple containing two integers representing the x (horizontal) and y (vertical) averaged positions of the detected hand. The unit is in pixels and relative to the center of the frame [0,0]. A negative x component means that the hand is to the left of the frame/camera and vice versa.
 
 ## Requirements
